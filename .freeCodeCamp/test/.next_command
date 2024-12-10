@@ -1,0 +1,248 @@
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=postgres
+psql --username=freecodecamp --dbname=postgres
+cat games.csv
+clear
+cat games.csv
+echo $TEST
+chmod +x games.csv
+./games.csv
+./games.csv
+clear
+clear
+clear
+./games.csv
+read -h
+man read
+read --help
+./games.csv
+./games.csv
+./games.csv
+./games.csv
+./games.csv
+./games.csv
+tail -n +2 games.csv
+help [
+help [[
+./games.csv
+./games.csv
+./games.csv
+./ins
+chmod -x games.csv
+chmod +x insert_data.sh
+./insert_data.sh
+./insert_data.sh
+__vsc_prompt_cmd_original
+clear
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+help [[
+help
+man expression
+help [[
+man expression
+help condition
+info condition
+help test
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+clear
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
+[ -d "$HOME/bin" ]
+[ -d "$HOME/.local/bin" ]
+PATH="$HOME/.local/bin:$PATH"
+[ -e /home/gitpod/.nix-profile/etc/profile.d/nix.sh ]
+. /home/gitpod/.nix-profile/etc/profile.d/nix.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]]
+source "$HOME/.rvm/scripts/rvm"
+[[ -n $SSH_CONNECTION ]]
+'/ide/node' -p '"5b955ab1a1ba" + JSON.stringify(process.env) + "5b955ab1a1ba"'
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql -U postgres < worldcup.sq
+psql -U postgres < worldcup.sql
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=worldcup
+qca
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+cat games.csv
+psql --username=freecodecamp --dbname=worldcup -t --no-align -c "SELECT team_id FROM teams WHERE name = 'France'"
+psql --username=freecodecamp --dbname=worldcup -t --no-align -c "SELECT team_id FROM teams WHERE name = 'Francec'"
+./insert_data.sh
+psql --username=freecodecamp --dbname=worldcup -t --no-align -c "SELECT team_id FROM teams WHERE name = 'France'"
+./insert_data.sh
+./insert_data.sh
+psql --username=freecodecamp --dbname=worldcup -t --no-align -c "TRUNCATE teams,games;"
+./insert_data.sh
+./insert_data.sh
+clear
+$PSQL "SELECT SUM(winner_goals, opponent_goals) FROM games"
+PSQL="psql --username=freecodecamp --dbname=worldcup --no-align --tuples-only -c"
+$PSQL "SELECT SUM(winner_goals, opponent_goals) FROM games"
+SELECT expected_output.txt games.csv insert_data.sh queries.sh worldcup.sql FROM games LEFT JOIN teams ON games.winner_id=teams.team_id
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
