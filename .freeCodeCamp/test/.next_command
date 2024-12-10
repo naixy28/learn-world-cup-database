@@ -246,3 +246,4 @@ SELECT expected_output.txt games.csv insert_data.sh queries.sh worldcup.sql FROM
 ./queries.sh
 ./queries.sh
 ./queries.sh
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
